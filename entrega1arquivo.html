@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<script>
+    let nome = "Jackson";
+    let telefone = "11923791000";
+    let possuiConvenio = true;
+    let profissao = "Programador Jr";
+    let salario = 3500;
+    let verificaConvenio;
+    if(possuiConvenio){
+        verificaConvenio = "possuo convênio";
+    }else{
+        
+        verificaConvenio = "não possuo convênio";
+    }
+
+    let texto = `Meu nome é ${nome}, ${verificaConvenio}, 
+    o número de telefone é ${telefone}, tenho a profissão de ${profissao} com o salario de ${salario}.`;
+    document.write(texto);
+
+    let numero1 = 10;
+    let numero2 = 30;
+    let novoNumero1;
+    let novoNumero2;
+    document.write("<br>");
+
+    document.write("o valor de A é " + numero1);
+    document.write("<br>");
+    document.write("o valor de B é " + numero2);
+    document.write("<br>");
+    novoNumero1 = numero2;
+    novoNumero2 = numero1;
+    document.write("o valor de A agora é " + novoNumero1);
+    document.write("<br>");    
+    document.write("o valor de B agora é " + novoNumero2);
+    </script>

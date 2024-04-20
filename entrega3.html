@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    let idade = parseInt(prompt("Digite a sua idade"));
+    let mens = "";
+    function mensagem(mens){
+        alert(mens);
+    }
+    if(idade < 16){
+        mens = "Você não pode votar! :(";
+        mensagem(mens);
+    }else{
+        if(idade >= 18 && idade <= 70){
+            mens = "Seu voto é obrigatório :/";
+            mensagem(mens);
+        }else{
+            mens = "Seu voto é opcional :)";
+            mensagem(mens);
+        }
+    }
+</script>
