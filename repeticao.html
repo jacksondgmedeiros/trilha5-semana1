@@ -1,0 +1,55 @@
+<meta charset="UTF-8">
+
+<script>
+
+    document.write("USANDO FOR PARA VERIFICAR SE É IMPAR OU PAR </br><hr>");
+    for (let numero = 1; numero <= 50; numero++) {
+        if(numero % 2){
+            document.write(`${numero} é impar </br>`)
+        }else{
+            document.write(`${numero} é par </br>`)
+        }
+    }
+
+    
+    document.write("</br> USANDO WHILE PARA VERIFICAR SE É IMPAR OU PAR </br><hr>");
+    var numero = 1;
+    while(numero <= 50){
+        if(numero % 2){
+            document.write(`${numero} é impar </br>`)
+        }else{
+            document.write(`${numero} é par </br>`)
+        }
+        numero++;
+    }
+
+    
+    document.write("</br> MOSTRANDO MULTIPLOS DE 3 <br><hr>");
+    let contagem = 1;
+    while(contagem < 100){
+        let resultado = contagem * 3;
+        if(resultado <=100){
+            document.write((resultado) + '<br>');
+           
+        }
+        contagem++;
+    }
+
+    
+    document.write("</br> MOSTRANDO a seguinte sequência (de 100 até 0, pulando de dois em dois): <br><hr>");
+    for(let numero = 100; numero >= 0; numero= numero - 2){
+        document.write(numero + '<br>');
+    }
+
+    document.write("</br> MOSTRANDO O JOGO DO PIM:<br><hr>");
+
+    for (let index = 1; index <= 40; index++) {
+        document.write('<br>>');
+        if(index % 4 == 0){
+            document.write('PIM');
+        }else{
+            document.write(index);        
+        }
+    }
+
+</script>
